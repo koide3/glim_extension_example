@@ -1,16 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 project(glim_extension_tutorial)
 
-set(CMAKE_CXX_STANDARD 17)
-
-if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
-  set(CMAKE_BUILD_TYPE "RelWithDebInfo" CACHE STRING "Choose the type of build." FORCE)
-  set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Debug" "Release" "MinSizeRel" "RelWithDebInfo")
-endif()
+set(CMAKE_CXX_STANDARD 17)    # Enable C++17 
 
 find_package(glim REQUIRED)
-find_package(Eigen3 REQUIRED)
-
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
