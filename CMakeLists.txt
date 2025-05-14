@@ -15,6 +15,14 @@ target_link_libraries(monitor_example
   glim::glim
 )
 
+# Zero altitude example module
+ament_auto_add_library(zero_altitude_example SHARED
+  src/zero_altitude_example.cpp
+)
+target_link_libraries(zero_altitude_example
+  glim::glim
+)
+
 # Position constraint example module
 ament_auto_add_library(position_constraint_example SHARED
   src/position_constraint_example.cpp
